@@ -3,6 +3,7 @@
     --global-color:#FFCC80;
     --text-color:#3C4852;
     --color:#fff;
+    --font:"Panton", "Arial", sans-serif;
 }
 
 
@@ -68,8 +69,12 @@ body {
     padding: 0;
     margin: 0;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: var(--font);
+    color: var(--text-color);
+    background-color:  #E5E5E5;
+    
 }
 
 *:focus {                          
@@ -92,14 +97,156 @@ img {
 }
 
 /* SITE HEADER */
+.site-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.site-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
+.site-header-logo {
+    display: flex;
+    flex-shrink: 0;
+    text-decoration: none;
+}
+.site-header-logo-img {
+    width: 153px;
+    height: 59px;
+    display: block;
+    object-fit: contain;
+    margin-right: 20px;
+}
 
+.site-header-logo-img:hover {
+    opacity: 0.8;
+}
 
+.site-header-link-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-header-link-iteam:not(:last-child) {
+    margin-right: 55px;
+}
+.site-header-link {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: var(--text-color);
+    white-space: nowrap;
+}
+.site-header-links {
+    display: block;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+}
+.site-header-logo-chat {
+    width: 26px;
+    height: 26px;
+    margin-right: 9px;
+    object-fit: cover;
+}
 
+.login-link {
+    margin-right: 15px;
+}
 
+.logo-login {
+    width: 23px;
+    height: 23px;
+    object-fit: contain;
+    margin: 0;
+}
+.site-header-chat-icon-text {
+}
+.site-header-login-link {
+    width: 147px;
+    background-color: var(--global-color);
+    border-radius: 10px;
+    padding: 17px 32px;
+}
 
+.site-header-login-link:hover {
+    background-color: rgba(255, 204, 128, 0.6);
+}
 
+.site-header-login-link:active {
+    opacity: 0.6;
+}
+
+/* <!-- SELL JOB SECTION --> */
+.sell-job-section-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.sell-job-section {
+    padding-right: 128px;
+}
+.sell-job-section-title {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 115px;
+    margin: 0;
+    margin-bottom: 24px;
+}
+.sell-job-section-text {
+    margin: 0;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 55px;
+}
+
+.sell-job-link-section-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.sell-job-section-link {
+    display: block;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 33px 41px;
+    background-color: var(--global-color);
+    border-radius: 10px;
+    margin-right: 23px;
+}
+.sell-link {
+    margin: 0;
+    border: 1px solid var(--global-color);
+    background-color: #E5E5E5;
+    padding: 33px 47px;
+}
+
+.sell-job-section-img {
+    width: 569px;
+    height: 795px;
+    object-fit: cover;
+}
 
 
 
